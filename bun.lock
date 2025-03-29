@@ -18,6 +18,9 @@
     "apps/http-backend": {
       "name": "http-backend",
       "version": "1.0.0",
+      "dependencies": {
+        "@repo/typescript-config": "*",
+      },
     },
     "apps/web": {
       "name": "web",
@@ -41,6 +44,9 @@
     "apps/ws-backend": {
       "name": "ws-backend",
       "version": "1.0.0",
+      "dependencies": {
+        "@repo/typescript-config": "*",
+      },
     },
     "packages/backend-common": {
       "name": "backend-common",
