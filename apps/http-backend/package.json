@@ -10,7 +10,9 @@
   "dependencies": {
     "@repo/typescript-config": "*",
     "@types/jsonwebtoken": "^9.0.9",
-    "jsonwebtoken": "^9.0.2"
+    "@repo/backend-common": "*",
+    "jsonwebtoken": "^9.0.2",
+    "@repo/common": "*"
   },
   "keywords": [],
   "author": "",

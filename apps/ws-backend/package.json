@@ -8,7 +8,14 @@
     "dev": "npm run build && npm run start"
   },
   "dependencies": {
-    "@repo/typescript-config": "*"
+    "@repo/common": "*",
+    "jsonwebtoken": "^9.0.2",
+    "ws": "^8.18.1",
+    "@repo/backend-common": "*"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "*",
+    "@types/ws": "^8.18.0"
   },
   "keywords": [],
   "author": "",

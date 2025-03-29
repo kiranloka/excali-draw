@@ -19,6 +19,8 @@
       "name": "http-backend",
       "version": "1.0.0",
       "dependencies": {
+        "@repo/backend-common": "*",
+        "@repo/common": "*",
         "@repo/typescript-config": "*",
         "@types/jsonwebtoken": "^9.0.9",
         "jsonwebtoken": "^9.0.2",
@@ -47,11 +49,16 @@
       "name": "ws-backend",
       "version": "1.0.0",
       "dependencies": {
+        "@repo/backend-common": "*",
+        "@repo/common": "*",
         "@repo/typescript-config": "*",
+        "@types/ws": "^8.18.0",
+        "jsonwebtoken": "^9.0.2",
+        "ws": "^8.18.1",
       },
     },
     "packages/backend-common": {
-      "name": "backend-common",
+      "name": "@repo/backend-common",
       "version": "1.0.0",
       "devDependencies": {
         "@repo/typescript-config": "*",
@@ -60,6 +67,9 @@
     "packages/common": {
       "name": "@repo/common",
       "version": "1.0.0",
+      "dependencies": {
+        "zod": "^3.24.2",
+      },
     },
     "packages/eslint-config": {
       "name": "@repo/eslint-config",
@@ -204,6 +214,8 @@
 
     "@nodelib/fs.walk": ["@nodelib/fs.walk@1.2.8", "", { "dependencies": { "@nodelib/fs.scandir": "2.1.5", "fastq": "^1.6.0" } }, "sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg=="],
 
+    "@repo/backend-common": ["@repo/backend-common@workspace:packages/backend-common"],
+
     "@repo/common": ["@repo/common@workspace:packages/common"],
 
     "@repo/eslint-config": ["@repo/eslint-config@workspace:packages/eslint-config"],
@@ -339,8 +351,6 @@
     "async-function": ["async-function@1.0.0", "", {}, "sha512-hsU18Ae8CDTR6Kgu9DYf0EbCr/a5iGL0rytQDobUcdpYOKokk8LEjVphnXkDkgpi0wYVsqrXuP0bZxJaTqdgoA=="],
 
     "available-typed-arrays": ["available-typed-arrays@1.0.7", "", { "dependencies": { "possible-typed-array-names": "^1.0.0" } }, "sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ=="],
-
-    "backend-common": ["backend-common@workspace:packages/backend-common"],
 
     "balanced-match": ["balanced-match@1.0.2", "", {}, "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="],
 
@@ -1167,6 +1177,8 @@
     "yn": ["yn@3.1.1", "", {}, "sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q=="],
 
     "yocto-queue": ["yocto-queue@0.1.0", "", {}, "sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q=="],
+
+    "zod": ["zod@3.24.2", "", {}, "sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ=="],
 
     "@eslint-community/eslint-utils/eslint-visitor-keys": ["eslint-visitor-keys@3.4.3", "", {}, "sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag=="],
 
