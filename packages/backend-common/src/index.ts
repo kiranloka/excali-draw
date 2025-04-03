@@ -1,2 +1,4 @@
-export const JWT_SECRET = "aksljak329";
-export const PORT = 8081;
+const JWT_SECRET = process.env.JWT_SECRET || '123123';
+exports.module = {
+  JWT_SECRET,
+};
